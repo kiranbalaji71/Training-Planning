@@ -1,0 +1,3 @@
+INFO:__main__ - this message is received
+WARNING:__main__ - warning!!!
+CRITICAL:__main__ - critical!!!!!
