@@ -1,4 +1,4 @@
 ## Training-Planning
-##### 1. Python file Operation 
-##### 2. Python Basic
-##### 3. Python Pandas Framework
+1. Python file Operation 
+2. Python Basic
+3. Python Pandas Framework
