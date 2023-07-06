@@ -1,0 +1,11 @@
+id,emp_name,city,year_of_experience,age,department,salary,position,email
+1,Anirudh,Chennai,1,21,IT,50000,Software Engineer,anirudh@email.com
+2,Michael,Mumbai,3,22,Finance,50000,Financial Analyst,michael@gmail.com
+3,Adhi,Coimbatore,2,,HR,45000,HR Manager,adhi@gmail.com
+4,Hari,Redhills,1,27,Sales,75000,Sales Executive,hari@outlook.com
+5,Kevin,Bangalore,4,24,IT,70000,Software Engineer,kevin@outlook.com
+6,Emma,Delhi,2,,HR,55000,HR Manager,emma@gmail.com
+7,Andrew,Kolkata,5,30,Finance,60000,Finance Analyst,andrew@yahoo.com
+8,Stephanie,Chennai,3,23,IT,55000,Software Engineerer,stephanie@email.com
+9,David,Chennai,4,26,Sales,60000,Sales Manager,david@yahoo.com
+10,Sarah,Bangalore,2,24,HR,45000,HR Manager,sarah@gmail.com
