@@ -6,10 +6,9 @@ with open('./dataset/test2.csv','r') as data:
     value = csv.DictReader(data)
     for item in value:
         emp_id = item['id']
-        emp_detail = item
-        detail[emp_id] = emp_detail
+        detail[emp_id] = item
 
-index = int(input("Enter the index number : "))
+index = input("Enter the index number : ")
 result = detail[index]
 for i in result:
     print(result[i])
