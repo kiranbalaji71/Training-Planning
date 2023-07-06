@@ -9,6 +9,4 @@ with open('./dataset/test2.csv','r') as data:
         detail[emp_id] = item
 
 index = input("Enter the index number : ")
-result = detail[index]
-for i in result:
-    print(result[i])
+print(detail[index])
