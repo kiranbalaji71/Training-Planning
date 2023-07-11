@@ -27,8 +27,14 @@ print('ROC_AUC :', metrics.roc_auc_score(y_test,y_pred_prob))
 print('PRC :',metrics.average_precision_score(y_test,y_pred_prob))
 
 
-reference = [['I','love','dogs']]
+reference = [['A','love','cats']]
 candidate = ['I','like','dogs']
 print('BLEU Score :', sentence_bleu(reference,candidate))
 
-  
+gtvalue = 'this is a cat'
+probvalue = 'this is a dog'
+print('Character error :', edit_distance(gtvalue,probvalue)/len(gtvalue))
+
+gtword = gtvalue.split()
+probword = probvalue.split()
+print('Word error :', edit_distance(gtword,probword)/len(gtword))
