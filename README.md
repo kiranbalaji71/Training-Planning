@@ -5,3 +5,4 @@
 4. Python Pandas Framework(Continued)
 5. Python Rest
 6. Python File Handling
+7. Python Metrics

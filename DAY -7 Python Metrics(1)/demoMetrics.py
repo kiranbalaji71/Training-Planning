@@ -1,6 +1,6 @@
 import numpy as np
 from sklearn import metrics
-# from nltk.translate.bleu_score import sentence_bleu
+from nltk.translate.bleu_score import sentence_bleu
 from nltk.metrics import edit_distance
 
 B = 'bird'
@@ -27,8 +27,8 @@ print('ROC_AUC :', metrics.roc_auc_score(y_test,y_pred_prob))
 print('PRC :',metrics.average_precision_score(y_test,y_pred_prob))
 
 
-# reference = [['this', 'is', 'a', 'test'], ['this', 'is', 'test']]
-# candidate = ['this', 'is', 'test']
-# print('BLEU Score :', sentence_bleu(reference,candidate))
+reference = [['I','love','dogs']]
+candidate = ['I','like','dogs']
+print('BLEU Score :', sentence_bleu(reference,candidate))
 
   
