@@ -27,9 +27,12 @@ print('ROC_AUC :', metrics.roc_auc_score(y_test,y_pred_prob))
 print('PRC :',metrics.average_precision_score(y_test,y_pred_prob))
 
 
-reference = [['A','love','cats']]
-candidate = ['I','like','dogs']
-print('BLEU Score :', sentence_bleu(reference,candidate))
+reference = [['I','am','thirty','six','years','old'],['I','am','thirty','six']]
+candidate = ['I','have','thirty','six','years']
+print('BLEU Score 1-gram :', sentence_bleu(reference,candidate,weights=(1,0,0)))
+print('BLEU Score 2-gram :', sentence_bleu(reference,candidate,weights=(0,1,0)))
+print('BLEU Score 3-gram :', sentence_bleu(reference,candidate,weights=(0,0,1)))
+
 
 gtvalue = 'this is a cat'
 probvalue = 'this is a dog'
