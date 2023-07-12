@@ -41,3 +41,7 @@ print('Character error :', edit_distance(gtvalue,probvalue)/len(gtvalue))
 gtword = gtvalue.split()
 probword = probvalue.split()
 print('Word error :', edit_distance(gtword,probword)/len(gtword))
+
+x_label = np.array(['cat','dog','bird','cat'])
+y_label = np.array(['dog','dog','bird','cat'])
+print('Label accuracy error :',np.mean(x_label == y_label))
