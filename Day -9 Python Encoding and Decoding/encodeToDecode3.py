@@ -1,11 +1,17 @@
 with open('./textFile/spanish.txt','r',encoding='utf-8') as spfile:
-    with open('./textFile/spoutput.txt','w',encoding='utf-16') as spresult:
+    with open('./textFile/spoutput.txt','w+',encoding='utf-16') as spresult:
         spresult.write(spfile.read())
-
-print('spainish file encoding successfully')
+        if(spfile.read() == spresult.read()):
+            print('spainish file is coming out correctly')
 
 with open('./textFile/japanese.txt','r',encoding='utf-8') as jafile:
-    with open('./textFile/jaoutput.txt','w',encoding='utf-16') as jaresult:
+    with open('./textFile/jaoutput.txt','w+',encoding='utf-16') as jaresult:
         jaresult.write(jafile.read())
+        if(jafile.read() == jaresult.read()):
+            print('japanese file is coming out correctly')
 
-print('japanese file encoding successfully')
+with open('./textFile/russian.txt','r',encoding='utf-8') as rufile:
+    with open('./textFile/ruoutput.txt','w+',encoding='utf-16') as ruresult:
+        ruresult.write(rufile.read())
+        if(rufile.read() == ruresult.read()):
+            print('russian file is coming out correctly')
