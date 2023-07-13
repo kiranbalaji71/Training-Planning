@@ -7,3 +7,4 @@
 6. Python File Handling
 7. Python Metrics
 8. Python Metrics(Continued)
+9. Python Encoding and Decoding
